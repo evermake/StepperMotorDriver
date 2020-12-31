@@ -8,6 +8,11 @@ void setup() {
   motor.positioning = ABSOLUTE_POS;
   // Set current position to the zero
   motor.setPosition(0);
+
+  // Set speeds
+  motor.setSpeed(0);
+  motor.setMaxSpeed(200);
+  motor.setAcceleration(50);
 }
 
 void loop() {
